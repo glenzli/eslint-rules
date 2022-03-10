@@ -28,4 +28,19 @@ module.exports = {
         'import',
         'babel',
     ],
+    overrides: [
+        {
+            files: ['*.spec.ts', '*.test.ts', '*.spec.tsx', '*.test.tsx', '*.spec.js', '*.test.js', '*.spec.jsx', '*.test.jsx'],
+            rules: {
+                'no-console': 'off',
+                '@typescript-eslint/ban-ts-comment': [
+                    'error',
+                    {
+                        'ts-ignore': 'allow-with-description'
+                    }
+                ],
+                '@typescript-eslint/no-explicit-any': 'off',
+            }
+        }
+    ]
 };
