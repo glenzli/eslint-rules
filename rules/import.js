@@ -28,19 +28,7 @@ module.exports = {
             'error'
         ],
         'import/no-unresolved': [
-            'error',
-            {
-                'ignore': [
-                    'editor',
-                    'document',
-                    'features',
-                    'gui',
-                    'common',
-                    'language',
-                    'resource',
-                    'workbench'
-                ]
-            }
+            'error'
         ],
         'import/no-webpack-loader-syntax': [
             'error'
